@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Brappberry</string>
+    <string name="prank">It\'s just a prank bro!</string>
+    <string name="credits">Credits</string>
+    <string name="rate">Rate</string>
+    <string name="source">Images and Audio clips were all acquired from either the H3H3productions YouTube channel or the Ethan and Hila YouTube channel</string>
+    <string name="ref">Go check them out!</string>
+
+    <string name="banner_ad_unit_id">ca-app-pub-7877750937176448/6685317819</string>
+</resources>
