@@ -1,7 +1,8 @@
 # ETHAN-BRAPPBERRY
 Justa small goof and a little gaf
 
-Credit to Ethan and Hila form H3H3productions for the images and sounds, I jsut wanted a quick way to access ETHAN BRADBERRY when the moment arose
+Credit to Ethan and Hila form H3H3productions for the images and sounds,<br> 
+I just wanted a quick way to access ETHAN BRADBERRY when the moment arose<br>
 Check out both of their great YouTube channels [here](https://www.youtube.com/user/h3h3Productions) and [here](https://www.youtube.com/user/h2h2Productions)
 
 
