@@ -6,6 +6,7 @@ import android.media.MediaPlayer;
 import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.DisplayMetrics;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -24,7 +25,6 @@ public class Soundboard extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         Fabric.with(this, new Crashlytics());
         setContentView(R.layout.activity_soundboard);
-
         sound = new Sound();
 
         moPubView = (MoPubView) findViewById(R.id.mopub_sample_ad);
@@ -46,6 +46,9 @@ public class Soundboard extends AppCompatActivity {
 
     public void BRADBERRY(View v){
         switch (v.getId()){
+            case R.id.clickwoohoo:
+                sound.setSoundResourceId(R.raw.clickwoohoo);
+                break;
             case R.id.brrrradberry:
                 sound.setSoundResourceId(R.raw.brrrradberry);
                 break;
@@ -57,6 +60,18 @@ public class Soundboard extends AppCompatActivity {
                 break;
             case R.id.hilabradberry:
                 sound.setSoundResourceId(R.raw.hilabradberry);
+                break;
+            case R.id.copberry:
+                sound.setSoundResourceId(R.raw.copberry);
+                break;
+            case R.id.abuseBerry:
+                sound.setSoundResourceId(R.raw.et);
+                break;
+            case R.id.jewishberry:
+                sound.setSoundResourceId(R.raw.bradberry_muslim_jewish);
+                break;
+            case R.id.slammin:
+                sound.setSoundResourceId(R.raw.slammin);
                 break;
             default:
                 sound.setSoundResourceId(R.raw.bradberry);
