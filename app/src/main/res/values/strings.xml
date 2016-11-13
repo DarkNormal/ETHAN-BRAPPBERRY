@@ -7,4 +7,9 @@
     <string name="ref">Go check them out!</string>
 
     <string name="banner_ad_unit_id">ca-app-pub-7877750937176448/6685317819</string>
+
+    <string-array name="meme_list">
+        <item>@raw/bornmobile</item>
+        <item>@raw/et</item>
+    </string-array>
 </resources>

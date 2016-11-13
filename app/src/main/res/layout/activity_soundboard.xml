@@ -30,9 +30,23 @@
             android:gravity="center"
             android:layout_marginBottom="24dp"
             android:textAllCaps="true"
-            android:textSize="30sp"
+            android:textSize="24sp"
             android:textColor="@android:color/white" />
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginBottom="24dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="0dp"
+                android:id="@+id/imaperson"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:onClick="BRADBERRY"
+                android:src="@drawable/clickwoohoo"/>
+
+        </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_marginBottom="24dp"
@@ -44,7 +58,14 @@
                 android:layout_weight="1"
                 android:layout_height="wrap_content"
                 android:onClick="BRADBERRY"
-                android:src="@drawable/clickwoohoo"/>
+                android:src="@drawable/physc"/>
+            <ImageView
+                android:layout_width="0dp"
+                android:id="@+id/bornmobile"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:onClick="BRADBERRY"
+                android:src="@drawable/ceo"/>
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
@@ -137,12 +158,12 @@
     </LinearLayout>
     </ScrollView>
 
-        <com.mopub.mobileads.MoPubView
-            android:id="@+id/mopub_sample_ad"
-            android:layout_width="match_parent"
-            android:background="@color/colorPrimary"
-            android:layout_alignParentBottom="true"
-            android:layout_height="50dp"/>
+        <!--<com.mopub.mobileads.MoPubView-->
+            <!--android:id="@+id/mopub_sample_ad"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:background="@color/colorPrimary"-->
+            <!--android:layout_alignParentBottom="true"-->
+            <!--android:layout_height="50dp"/>-->
 
 
 </RelativeLayout>

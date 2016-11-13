@@ -13,6 +13,8 @@ import android.view.View;
 import com.crashlytics.android.Crashlytics;
 import com.mopub.mobileads.MoPubView;
 
+import java.util.logging.Logger;
+
 import io.fabric.sdk.android.Fabric;
 
 public class Soundboard extends AppCompatActivity {
@@ -27,14 +29,14 @@ public class Soundboard extends AppCompatActivity {
         setContentView(R.layout.activity_soundboard);
         sound = new Sound();
 
-        moPubView = (MoPubView) findViewById(R.id.mopub_sample_ad);
-        // TODO: Replace this test id with your personal ad unit id
-        if (moPubView != null) {
-            moPubView.setAdUnitId("8fbfa6f2d9a9466cbfe2a8e9b3318363");
-        }
-        if (moPubView != null) {
-            moPubView.loadAd();
-        }
+//        moPubView = (MoPubView) findViewById(R.id.mopub_sample_ad);
+//        // TODO: Replace this test id with your personal ad unit id
+//        if (moPubView != null) {
+//            moPubView.setAdUnitId("8fbfa6f2d9a9466cbfe2a8e9b3318363");
+//        }
+//        if (moPubView != null) {
+//            moPubView.loadAd();
+//        }
 //        AdView mAdView = (AdView) findViewById(R.id.adView);
 //        AdRequest adRequest = new AdRequest.Builder().build();
 //        if (mAdView != null) {
@@ -45,9 +47,13 @@ public class Soundboard extends AppCompatActivity {
     }
 
     public void BRADBERRY(View v){
+        
         switch (v.getId()){
             case R.id.clickwoohoo:
                 sound.setSoundResourceId(R.raw.clickwoohoo);
+                break;
+            case R.id.imaperson:
+                sound.setSoundResourceId(R.raw.imaperson);
                 break;
             case R.id.brrrradberry:
                 sound.setSoundResourceId(R.raw.brrrradberry);
@@ -55,6 +61,7 @@ public class Soundboard extends AppCompatActivity {
             case R.id.ethanbradberry:
                 sound.setSoundResourceId(R.raw.bradberry);
                 break;
+            //etc. etc.....
             case R.id.ethankbradberry:
                 sound.setSoundResourceId(R.raw.ethanbradberry);
                 break;
@@ -73,12 +80,15 @@ public class Soundboard extends AppCompatActivity {
             case R.id.slammin:
                 sound.setSoundResourceId(R.raw.slammin);
                 break;
+            case R.id.bornmobile:
+                sound.setSoundResourceId(R.raw.bornmobile);
+                break;
+
             default:
                 sound.setSoundResourceId(R.raw.bradberry);
                 break;
         }
             mp = MediaPlayer.create(this, sound.getSoundResourceId());
-            mp.start();
             mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
                 @Override
                 public void onCompletion(MediaPlayer mp) {
@@ -86,6 +96,7 @@ public class Soundboard extends AppCompatActivity {
 
                 }
             });
+            mp.start();
     }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
