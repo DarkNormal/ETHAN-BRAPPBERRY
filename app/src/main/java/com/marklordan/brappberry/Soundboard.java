@@ -88,7 +88,7 @@ public class Soundboard extends AppCompatActivity {
                 sound.setSoundResourceId(R.raw.bradberry);
                 break;
         }
-            mp = MediaPlayer.create(this, sound.getSoundResourceId());
+            MediaPlayer mp = MediaPlayer.create(this, sound.getSoundResourceId());
             mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
                 @Override
                 public void onCompletion(MediaPlayer mp) {

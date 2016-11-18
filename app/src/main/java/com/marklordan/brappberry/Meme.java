@@ -7,6 +7,9 @@ package com.marklordan.brappberry;
 public class Meme {
 
     private int mSoundResourceId;
+
+
+
     private int mImageResourceId;
 
     public Meme(){
@@ -14,4 +17,11 @@ public class Meme {
     }
     public void setSoundResourceId(int id) { mSoundResourceId = id; }
     public int getSoundResourceId() { return mSoundResourceId; }
+    public int getImageResourceId() {
+        return mImageResourceId;
+    }
+
+    public void setImageResourceId(int imageResourceId) {
+        mImageResourceId = imageResourceId;
+    }
 }
