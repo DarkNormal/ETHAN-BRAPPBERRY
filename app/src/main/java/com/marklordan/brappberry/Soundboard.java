@@ -53,7 +53,7 @@ public class Soundboard extends AppCompatActivity {
                 sound.setSoundResourceId(R.raw.clickwoohoo);
                 break;
             case R.id.imaperson:
-                sound.setSoundResourceId(R.raw.imaperson);
+                //sound.setSoundResourceId(R.raw.imaperson);
                 break;
             case R.id.brrrradberry:
                 sound.setSoundResourceId(R.raw.brrrradberry);
@@ -81,7 +81,7 @@ public class Soundboard extends AppCompatActivity {
                 sound.setSoundResourceId(R.raw.slammin);
                 break;
             case R.id.bornmobile:
-                sound.setSoundResourceId(R.raw.bornmobile);
+                //sound.setSoundResourceId(R.raw.bornmobile);
                 break;
 
             default:

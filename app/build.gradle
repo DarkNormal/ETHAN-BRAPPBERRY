@@ -17,7 +17,7 @@ repositories {
 
 android {
     compileSdkVersion 25
-    buildToolsVersion "23.0.3"
+    buildToolsVersion "25.0.0"
 
     defaultConfig {
         applicationId "com.marklordan.brappberry"
@@ -36,15 +36,21 @@ android {
 }
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
-    compile('com.crashlytics.sdk.android:crashlytics:2.5.5@aar') {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile('com.crashlytics.sdk.android:crashlytics:2.6.5@aar') {
         transitive = true;
     }
-    compile('com.mopub:mopub-sdk:4.5.1@aar') {
-        transitive = true;
-    }
+
     compile 'com.android.support:appcompat-v7:25.0.1'
     compile 'com.google.android.gms:play-services-ads:9.0.0'
     compile 'com.android.support:design:25.0.1'
     testCompile 'junit:junit:4.12'
+
+    compile 'com.android.support:cardview-v7:25.0.1'
+    compile('io.fabric.sdk.android:fabric:1.3.10@aar') {
+        transitive = true;
+    }
+    compile('com.mopub:mopub-sdk:4.11.0@aar') {
+        transitive = true;
+    }
 }

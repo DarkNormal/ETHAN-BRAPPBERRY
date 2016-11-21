@@ -21,25 +21,21 @@ import java.util.List;
 public class MemeListFragment  extends Fragment{
 
     private MemeAdapter mMemeAdapter;
-    private StaggeredGridLayoutManager mStaggeredGridLayoutManager;
     private RecyclerView mMemeRecyclerView;
     private List<Meme> mMemeObjList = new ArrayList<>();
     @Override
     public View onCreateView (LayoutInflater inflater,ViewGroup container, Bundle savedInstanceState){
         View v = inflater.inflate(R.layout.fragment_meme_list, container, false);
 
-        mStaggeredGridLayoutManager = new StaggeredGridLayoutManager(3, StaggeredGridLayoutManager.VERTICAL);
         mMemeRecyclerView = (RecyclerView) v.findViewById(R.id.meme_recycler_view);
-        mMemeRecyclerView.setLayoutManager(mStaggeredGridLayoutManager);
+        mMemeRecyclerView.setLayoutManager(new StaggeredGridLayoutManager(3, StaggeredGridLayoutManager.VERTICAL));
         mMemeRecyclerView.setHasFixedSize(true);
         TypedArray spicyMemes = getResources().obtainTypedArray(R.array.meme_audio_source_list);
         TypedArray spicyMemesImages = getResources().obtainTypedArray(R.array.meme_image_source_list);
         for (int i = 0; i < spicyMemes.length(); i++) {
-            Meme meme = new Meme();
             int memeSoundResoureceId = spicyMemes.getResourceId(i, -1);
             int memeImageResourceId = spicyMemesImages.getResourceId(i, -1);
-            meme.setSoundResourceId(memeSoundResoureceId);
-            meme.setImageResourceId(memeImageResourceId);
+            Meme meme = new Meme(memeSoundResoureceId, memeImageResourceId);
             mMemeObjList.add(meme);
         }
 

@@ -15,6 +15,10 @@ public class Meme {
     public Meme(){
         mSoundResourceId = -1;
     }
+    public Meme(int soundResourceId, int imageResourceId){
+        mSoundResourceId = soundResourceId;
+        mImageResourceId = imageResourceId;
+    }
     public void setSoundResourceId(int id) { mSoundResourceId = id; }
     public int getSoundResourceId() { return mSoundResourceId; }
     public int getImageResourceId() {
