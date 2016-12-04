@@ -15,12 +15,6 @@
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
 
-        <activity
-            android:name=".Soundboard"
-            android:screenOrientation="portrait">
-
-        </activity>
-
         <meta-data
             android:name="io.fabric.ApiKey"
             android:value="48008938d29bf48fd34d3aca183790bfbfdf8b99" />
@@ -38,10 +32,7 @@
         <activity
             android:name="com.mopub.mobileads.MraidVideoPlayerActivity"
             android:configChanges="keyboardHidden|orientation|screenSize" />
-        <activity
-            android:name=".MainActivity"
-            android:label="@string/title_activity_main"
-            android:theme="@style/AppTheme">
+        <activity android:name=".MemeListActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

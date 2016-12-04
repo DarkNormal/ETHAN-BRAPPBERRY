@@ -10,8 +10,15 @@
     <string name="section_format">format</string>
 
     <string name="banner_ad_unit_id">ca-app-pub-7877750937176448/6685317819</string>
+    <string name="imageContentDescription">image of sound to play</string>
 
     <string-array name="meme_audio_source_list">
+        <item>@raw/hilabradberry</item>
+        <item>@raw/et</item>
+        <item>@raw/ethanbradberry</item>
+        <item>@raw/bradberry</item>
+        <item>@raw/copberry</item>
+        <item>@raw/brrrradberry</item>
         <item>@raw/et</item>
         <item>@raw/bradberry</item>
         <item>@raw/copberry</item>
@@ -20,6 +27,12 @@
         <item>@raw/ethanbradberry</item>
     </string-array>
     <string-array name="meme_image_source_list">
+        <item>@drawable/hila</item>
+        <item>@drawable/pointyberry</item>
+        <item>@drawable/ethan</item>
+        <item>@drawable/bradberrypoint</item>
+        <item>@drawable/copberry</item>
+        <item>@drawable/brrradberry</item>
         <item>@drawable/pointyberry</item>
         <item>@drawable/bradberrypoint</item>
         <item>@drawable/copberry</item>
