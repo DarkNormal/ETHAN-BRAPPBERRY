@@ -1,5 +1,5 @@
 # ETHAN-BRAPPBERRY
-Justa small goof and a little gaf
+Just a small goof and a little gaf
 
 Credit to Ethan and Hila form H3H3productions for the images and sounds,<br> 
 I just wanted a quick way to access ETHAN BRADBERRY when the moment arose<br>
