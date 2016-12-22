@@ -18,7 +18,7 @@ import java.util.List;
  * Created by Mark on 13/11/2016.
  */
 
-public class MemeListFragment  extends Fragment{
+public class H3H3MemeListFragment extends Fragment{
 
     private MemeAdapter mMemeAdapter;
     private RecyclerView mMemeRecyclerView;
@@ -83,8 +83,8 @@ public class MemeListFragment  extends Fragment{
         }
         @Override
         public void onBindViewHolder(MemeHolder holder, int position) {
-                Meme meme = mMemeList.get(position);
-                holder.bindMeme(meme);
+            Meme meme = mMemeList.get(position);
+            holder.bindMeme(meme);
         }
         @Override
         public int getItemCount() {

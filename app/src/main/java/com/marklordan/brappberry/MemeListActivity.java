@@ -12,6 +12,6 @@ public class MemeListActivity extends SingleFragmentActivity{
 
     @Override
     protected Fragment createFragment() {
-        return new MemeListFragment();
+        return new BradberryMemeListFragment();
     }
 }
