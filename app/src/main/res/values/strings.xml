@@ -37,17 +37,19 @@
         <item>@raw/ok_cunt_final</item>
         <item>@raw/clickwoohoo</item>
         <item>@raw/however_comma</item>
-        <item>@raw/bradberry</item>
-        <item>@raw/copberry</item>
-        <item>@raw/brrrradberry</item>
+        <item>@raw/vape_naysh</item>
+        <item>@raw/bornmobile</item>
+        <item>@raw/strawberry</item>
+        <item>@raw/time_to_stop</item>
     </string-array>
     <string-array name="meme_image_source_list">
         <item>@drawable/idubbbz1</item>
-        <item>@drawable/ethan</item>
+        <item>@drawable/clickwoohoo</item>
         <item>@drawable/idubbbz2</item>
-        <item>@drawable/bradberrypoint</item>
-        <item>@drawable/copberry</item>
-        <item>@drawable/brrradberry</item>
+        <item>@drawable/vape_naysh</item>
+        <item>@drawable/bornmobile</item>
+        <item>@drawable/strawberry</item>
+        <item>@drawable/stop</item>
     </string-array>
 
     <!-- TODO: Remove or change this placeholder text -->
