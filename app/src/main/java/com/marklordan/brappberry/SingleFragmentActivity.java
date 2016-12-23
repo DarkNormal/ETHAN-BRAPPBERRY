@@ -7,7 +7,6 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
 
 /**
  * Created by Mark on 18/11/2016.
@@ -46,10 +45,10 @@ public abstract class SingleFragmentActivity extends AppCompatActivity {
         public Fragment getItem(int position) {
             switch (position) {
                 case 0:
-                    return new BradberryMemeListFragment();
+                    return new BradberryMemeFragment();
                 case 1:
                 default:
-                    return new H3H3MemeListFragment();
+                    return new DankMemeFragment();
             }
         }
 
