@@ -1,6 +1,11 @@
 package com.marklordan.brappberry;
 
+import android.os.Bundle;
 import android.support.v4.app.Fragment;
+
+import com.google.firebase.analytics.FirebaseAnalytics;
+import com.crashlytics.android.Crashlytics;
+import io.fabric.sdk.android.Fabric;
 
 /**
  * Created by Mark on 13/11/2016.
@@ -9,9 +14,14 @@ import android.support.v4.app.Fragment;
 public class MemeListActivity extends SingleFragmentActivity{
 
     public static final String TAG = "MemeListActivity";
+    @Override
+    protected void onCreate(Bundle savedInstanceState){
+        super.onCreate(savedInstanceState);
+        Fabric.with(this, new Crashlytics());
+    }
 
     @Override
     protected Fragment createFragment() {
-        return new MemeListFragment();
+        return new BradberryMemeFragment();
     }
 }

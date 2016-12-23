@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Brappberry</string>
+    <string name="app_name">Goofs &#38; Gafs</string>
     <string name="prank">It\'s just a prank bro!</string>
     <string name="credits">Credits</string>
     <string name="rate">Rate</string>
@@ -12,32 +12,82 @@
     <string name="banner_ad_unit_id">ca-app-pub-7877750937176448/6685317819</string>
     <string name="imageContentDescription">image of sound to play</string>
 
+    <string-array name="bradberry_meme_audio_source_list">
+        <item>@raw/bradberry</item>
+        <item>@raw/slammin</item>
+        <item>@raw/hilabradberry</item>
+        <item>@raw/et</item>
+        <item>@raw/bradberry_muslim_jewish</item>
+        <item>@raw/ethanbradberry</item>
+        <item>@raw/copberry</item>
+        <item>@raw/brrrradberry</item>
+    </string-array>
+    <string-array name="bradberry_meme_image_source_list">
+        <item>@drawable/bradberrypoint</item>
+        <item>@drawable/slamminberry</item>
+        <item>@drawable/hila</item>
+        <item>@drawable/pointyberry</item>
+        <item>@drawable/jewishberry</item>
+        <item>@drawable/ethan</item>
+        <item>@drawable/copberry</item>
+        <item>@drawable/brrradberry</item>
+    </string-array>
+
+    <string name="ethan_bradberry">ETHANBRADBERRY</string>
+    <string name="ethan_slammin">SLAMMIN</string>
+    <string name="hila_bradberry">HILA</string>
+    <string name="ethan_et">E.T.</string>
+    <string name="ethan_dis_ethan">DIS ETHAN</string>
+    <string name="papa_bradberry">PAPA</string>
+    <string name="ethan_bradberry_alt">BRADBERRY</string>
+    <string name="ethan_bradberry_multi">BRRRRADBERRY</string>
+
+    <string-array name="bradberry_meme_text_source_list">
+        <item>@string/ethan_bradberry</item>
+        <item>@string/ethan_slammin</item>
+        <item>@string/hila_bradberry</item>
+        <item>@string/ethan_et</item>
+        <item>@string/ethan_dis_ethan</item>
+        <item>@string/papa_bradberry</item>
+        <item>@string/ethan_bradberry_alt</item>
+        <item>@string/ethan_bradberry_multi</item>
+    </string-array>
+
     <string-array name="meme_audio_source_list">
-        <item>@raw/hilabradberry</item>
-        <item>@raw/et</item>
-        <item>@raw/ethanbradberry</item>
-        <item>@raw/bradberry</item>
-        <item>@raw/copberry</item>
-        <item>@raw/brrrradberry</item>
-        <item>@raw/et</item>
-        <item>@raw/bradberry</item>
-        <item>@raw/copberry</item>
-        <item>@raw/brrrradberry</item>
-        <item>@raw/hilabradberry</item>
-        <item>@raw/ethanbradberry</item>
+        <item>@raw/ok_cunt_final</item>
+        <item>@raw/clickwoohoo</item>
+        <item>@raw/however_comma</item>
+        <item>@raw/vape_naysh</item>
+        <item>@raw/bornmobile</item>
+        <item>@raw/strawberry</item>
+        <item>@raw/time_to_stop</item>
+    </string-array>
+    <string name="ok_cunt">OK CUNT</string>
+    <string name="click_woohoo">CLICK WOOHOO</string>
+    <string name="however_comma">HOWEVER</string>
+    <string name="vape">VAPE NAYSH</string>
+    <string name="born_mobile">BORN MOBILE</string>
+    <string name="strawberry">IMASTRAWBERRY</string>
+    <string name="time_to_stop">TIME TO STOP</string>
+    <string-array name="dank_meme_text_source_list">
+        <item>@string/ok_cunt</item>
+        <item>@string/click_woohoo</item>
+        <item>@string/however_comma</item>
+        <item>@string/vape</item>
+        <item>@string/born_mobile</item>
+        <item>@string/strawberry</item>
+        <item>@string/time_to_stop</item>
     </string-array>
     <string-array name="meme_image_source_list">
-        <item>@drawable/hila</item>
-        <item>@drawable/pointyberry</item>
-        <item>@drawable/ethan</item>
-        <item>@drawable/bradberrypoint</item>
-        <item>@drawable/copberry</item>
-        <item>@drawable/brrradberry</item>
-        <item>@drawable/pointyberry</item>
-        <item>@drawable/bradberrypoint</item>
-        <item>@drawable/copberry</item>
-        <item>@drawable/brrradberry</item>
-        <item>@drawable/hila</item>
-        <item>@drawable/ethan</item>
+        <item>@drawable/idubbbz1</item>
+        <item>@drawable/clickwoohoo</item>
+        <item>@drawable/idubbbz2</item>
+        <item>@drawable/vape_naysh</item>
+        <item>@drawable/bornmobile</item>
+        <item>@drawable/strawberry</item>
+        <item>@drawable/stop</item>
     </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
