@@ -21,6 +21,11 @@ import java.util.List;
 
 public class MemeFragment extends Fragment {
 
+    protected static String SAVE_MEME_TEXT = "meme_text";
+    protected static String SAVE_MEME_IMAGE = "meme_image";
+    protected static String SAVE_MEME_SOUND = "meme_sound";
+
+
     protected MemeAdapter mMemeAdapter;
     protected RecyclerView mMemeRecyclerView;
     protected List<Meme> mMemeObjList = new ArrayList<>();
@@ -36,6 +41,15 @@ public class MemeFragment extends Fragment {
             mMemeRecyclerView.setAdapter(mMemeAdapter);
         }
         return v;
+    }
+
+    protected int[] convertToIntArray(TypedArray typedArray){
+        int arrayLength = typedArray.length();
+        int[] intArray = new int[arrayLength];
+        for (int i = 0; i < arrayLength; i++) {
+            intArray[i] = typedArray.getResourceId(i,-1);
+        }
+        return intArray;
     }
 
     public class MemeHolder extends RecyclerView.ViewHolder implements View.OnClickListener{

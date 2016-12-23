@@ -21,17 +21,37 @@ import java.util.List;
 
 public class DankMemeFragment extends MemeFragment{
 
+
+    private int[] mSpicyMemes, mSpicyMemesImages;
+    private String[] mSpicyMemesText;
+
     @Override
     public void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
-        TypedArray spicyMemes = getResources().obtainTypedArray(R.array.meme_audio_source_list);
-        TypedArray spicyMemesImages = getResources().obtainTypedArray(R.array.meme_image_source_list);
-        String[] spicyMemesText = getResources().getStringArray(R.array.dank_meme_text_source_list);
-        for (int i = 0; i < spicyMemes.length(); i++) {
-            int memeSoundResourceId = spicyMemes.getResourceId(i, -1);
-            int memeImageResourceId = spicyMemesImages.getResourceId(i, -1);
-            Meme meme = new Meme(memeSoundResourceId, memeImageResourceId, spicyMemesText[i]);
+        if(savedInstanceState == null) {
+            mSpicyMemes = convertToIntArray(getResources().obtainTypedArray(R.array.meme_audio_source_list));
+            mSpicyMemesImages =  convertToIntArray(getResources().obtainTypedArray(R.array.meme_image_source_list));
+            mSpicyMemesText = getResources().getStringArray(R.array.dank_meme_text_source_list);
+        }
+        else{
+            mSpicyMemes = savedInstanceState.getIntArray(SAVE_MEME_SOUND);
+            mSpicyMemesImages = savedInstanceState.getIntArray(SAVE_MEME_IMAGE);
+            mSpicyMemesText = savedInstanceState.getStringArray(SAVE_MEME_TEXT);
+        }
+        for (int i = 0; i < mSpicyMemes.length; i++) {
+            int memeSoundResourceId = mSpicyMemes[i];
+            int memeImageResourceId = mSpicyMemesImages[i];
+            Meme meme = new Meme(memeSoundResourceId, memeImageResourceId, mSpicyMemesText[i]);
             mMemeObjList.add(meme);
         }
+    }
+
+    @Override
+    public void onSaveInstanceState(Bundle outState) {
+        outState.putStringArray(SAVE_MEME_TEXT, mSpicyMemesText);
+        outState.putIntArray(SAVE_MEME_IMAGE,mSpicyMemesImages);
+        outState.putIntArray(SAVE_MEME_SOUND, mSpicyMemes);
+        super.onSaveInstanceState(outState);
+
     }
 }

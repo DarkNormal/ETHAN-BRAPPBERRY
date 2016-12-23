@@ -11,7 +11,7 @@ import io.fabric.sdk.android.Fabric;
  * Created by Mark on 13/11/2016.
  */
 
-public class MemeListActivity extends SingleFragmentActivity implements BradberryMemeFragment.OnMemePlayedListener{
+public class MemeListActivity extends SingleFragmentActivity{
 
     public static final String TAG = "MemeListActivity";
     @Override
@@ -23,11 +23,5 @@ public class MemeListActivity extends SingleFragmentActivity implements Bradberr
     @Override
     protected Fragment createFragment() {
         return new BradberryMemeFragment();
-    }
-
-    @Override
-    public void onMemePlayed(String memeName) {
-        Bundle bundle = new Bundle();
-        bundle.putString(FirebaseAnalytics.Param.ITEM_NAME, memeName);
     }
 }
