@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "832686227939",
+    "firebase_url": "https://ethan-brappberry.firebaseio.com",
+    "project_id": "ethan-brappberry",
+    "storage_bucket": "ethan-brappberry.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:832686227939:android:10c95ff90f8bf51c",
+        "android_client_info": {
+          "package_name": "com.marklordan.brappberry"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "832686227939-caibribu2bi1ro3kqr5admfuojf9s7t5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.marklordan.brappberry",
+            "certificate_hash": "6667b94b670970efead42a5d00e2d7c5b52eefcf"
+          }
+        },
+        {
+          "client_id": "832686227939-gq8cdnae1mnaj661bung850mcb89g7t2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB1glv-dmYBqfqXCrIehH-OqDZlps8mVHo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "832686227939-gq8cdnae1mnaj661bung850mcb89g7t2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
